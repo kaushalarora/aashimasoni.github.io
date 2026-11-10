@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aashima Soni | Portfolio</title>
+<meta name="description" content="Aashima Soni's professional portfolio">
+<style>
+:root {
+  --bg:#090e19; --card:#121d30; --blue:#63a8ff;
+  --cyan:#65e6e8; --text:#f5f7ff; --muted:#aab7cc;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{
+  background:radial-gradient(ellipse at 80% 0%,#15366b 0%,transparent 35%),var(--bg);
+  color:var(--text);font:16px/1.7 system-ui,sans-serif
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(1100px,90%);margin:auto}
+header{
+  position:sticky;top:0;z-index:5;background:#090e19e8;
+  backdrop-filter:blur(14px);border-bottom:1px solid #ffffff15
+}
+nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:20px;font-weight:800}
+.logo span{color:var(--cyan)}
+.navlinks{display:flex;gap:22px;font-size:13px;color:var(--muted)}
+.navlinks a:hover{color:var(--cyan)}
+.btn{
+  display:inline-block;padding:11px 19px;border-radius:30px;
+  border:1px solid #ffffff30;font-weight:650;font-size:14px
+}
+.btn.primary{background:linear-gradient(120deg,#3987ff,#54dce2);color:#07101c;border:0}
+.hero{min-height:570px;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:35px;padding:70px 0}
+.eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.1;letter-spacing:-2.5px;margin:18px 0}
+h1 span{background:linear-gradient(90deg,#fff,#70aaff,#68e7e9);background-clip:text;color:transparent}
+.lead{font-size:20px;color:#d5e0f2;margin-bottom:15px}
+.muted{color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.art{display:grid;place-items:center;min-height:300px}
+.orb{
+ width:250px;height:250px;border-radius:50%;display:grid;place-items:center;
+ background:radial-gradient(circle at 35% 25%,#8aeeef,#448be7 38%,#172448 72%);
+ box-shadow:0 0 100px #418dff40;position:relative
+}
+.orb:after{content:"";position:absolute;inset:-24px;border:1px solid #68c7ff50;border-radius:50%;transform:scaleY(.7) rotate(-25deg)}
+.initials{font-size:78px;font-weight:900;letter-spacing:-7px}
+section{padding:55px 0}
+.section-title{margin-bottom:25px}
+h2{font-size:clamp(28px,4vw,38px);line-height:1.2;letter-spacing:-1px;margin-top:7px}
+.grid{display:grid;gap:18px}
+.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{
+ background:linear-gradient(145deg,#17243a,#101827);
+ border:1px solid #ffffff14;border-radius:19px;padding:25px
+}
+.card h3{font-size:18px;margin:12px 0 8px}
+.card p{font-size:14px;color:var(--muted)}
+.icon{
+ width:44px;height:44px;border-radius:13px;display:grid;place-items:center;
+ background:#438bff22;color:var(--cyan);font-size:22px
+}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{font-size:12px;border:1px solid #ffffff20;border-radius:30px;padding:4px 10px;color:#d5e4f8}
+.item{padding:17px 0;border-bottom:1px solid #ffffff16}
+.item:last-child{border:0}
+.item small{color:var(--cyan);font-weight:700}
+.item h3{margin:4px 0}
+.contact{
+ padding:35px;border-radius:22px;border:1px solid #69b8ff40;
+ background:linear-gradient(110deg,#2556a744,#1b7e8a20);
+ display:flex;align-items:center;justify-content:space-between;gap:25px
+}
+footer{border-top:1px solid #ffffff18;padding:28px 0;color:var(--muted);font-size:13px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){
+ .navlinks{gap:10px}.navlinks a:not(:last-child){display:none}
+ .hero{grid-template-columns:1fr;padding:55px 0 25px}
+ .art{min-height:270px}.two,.three{grid-template-columns:1fr}
+ .contact{align-items:flex-start;flex-direction:column}
+ section{padding:38px 0}
+}
+</style>
+</head>
+<body>
+<header>
+ <nav class="container">
+  <a class="logo" href="#home"><span>AS</span> Aashima Soni</a>
+  <div class="navlinks">
+   <a href="#about">About</a>
+   <a href="#focus">Interests</a>
+   <a href="#projects">Projects</a>
+   <a href="#experience">Journey</a>
+   <a class="btn primary" href="#contact">Contact ↗</a>
+  </div>
+ </nav>
+</header>
+
+<main>
+<section class="container hero" id="home">
+ <div>
+  <div class="eyebrow">Ideas · Growth · Technology</div>
+  <h1>Hello, I'm<br><span>Aashima Soni.</span></h1>
+  <p class="lead">Curious about people, business and the possibilities of technology.</p>
+  <p class="muted">Exploring AI-enabled workflows, business growth, outreach and practical problem-solving. This portfolio is a space for professional interests, projects and ideas.</p>
+  <div class="actions">
+   <a class="btn primary" href="#projects">Explore Projects ↗</a>
+   <a class="btn" href="https://www.linkedin.com/in/aashima-soni-87554a207/" target="_blank" rel="noopener">LinkedIn Profile ↗</a>
+  </div>
+ </div>
+ <div class="art"><div class="orb"><div class="initials">AS</div></div></div>
+</section>
+
+<section id="about">
+ <div class="container grid two">
+  <article class="card">
+   <div class="eyebrow">About me</div>
+   <h2>Curiosity drives progress.</h2>
+   <p class="muted" style="margin-top:16px">I’m Aashima Soni. I’m interested in how clear communication, thoughtful strategy and emerging technology can help people and teams work more effectively. I value continuous learning, asking better questions and turning ideas into useful outcomes.</p>
+   <div class="tags"><span class="tag">Learning</span><span class="tag">Communication</span><span class="tag">Problem-solving</span></div>
+  </article>
+  <article class="card">
+   <div class="eyebrow">My approach</div>
+   <h2>Ideas into action.</h2>
+   <div class="item"><h3>01 · Understand</h3><p>Start by identifying the actual problem and the people affected by it.</p></div>
+   <div class="item"><h3>02 · Explore</h3><p>Consider practical strategies, tools and alternative approaches.</p></div>
+   <div class="item"><h3>03 · Improve</h3><p>Learn from feedback and refine what works.</p></div>
+  </article>
+ </div>
+</section>
+
+<section id="focus">
+ <div class="container">
+  <div class="section-title"><div class="eyebrow">Areas of interest</div><h2>What I'm exploring</h2></div>
+  <div class="grid three">
+   <article class="card"><div class="icon">✦</div><h3>AI & Workflows</h3><p>Exploring how AI can support research, reporting, productivity and everyday decision-making.</p></article>
+   <article class="card"><div class="icon">↗</div><h3>Business Growth</h3><p>Understanding business challenges, customer needs and practical ways to turn insights into action.</p></article>
+   <article class="card"><div class="icon">◎</div><h3>Outreach & Communication</h3><p>Interested in relevant messaging, thoughtful outreach and creating meaningful professional conversations.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="projects">
+ <div class="container">
+  <div class="section-title"><div class="eyebrow">Selected work</div><h2>Projects & ideas</h2></div>
+  <div class="grid three">
+   <article class="card"><div class="eyebrow">Project 01</div><h3>New Joinee Experience Survey</h3><p>A project associated with understanding and gathering feedback about the experience of new joiners in an organization.</p><div class="tags"><span class="tag">Feedback</span><span class="tag">Experience</span></div></article>
+   <article class="card"><div class="eyebrow">Topic 02</div><h3>AI for Business Workflows</h3><p>Exploring where AI-assisted processes may reduce repetitive work and support better access to information.</p><div class="tags"><span class="tag">AI</span><span class="tag">Productivity</span></div></article>
+   <article class="card"><div class="eyebrow">Topic 03</div><h3>Thoughtful Outreach</h3><p>Exploring how relevant messaging and coordinated communication can support stronger professional connections.</p><div class="tags"><span class="tag">Outreach</span><span class="tag">Communication</span></div></article>
+  </div>
+  <p class="muted" style="font-size:12px;margin-top:15px">Please verify project details before publishing. The latter two cards describe areas of interest, not confirmed client projects.</p>
+ </div>
+</section>
+
+<section id="experience">
+ <div class="container grid two">
+  <article class="card">
+   <div class="eyebrow">Professional journey</div><h2>Experience</h2>
+   <div class="item"><small>PROFILE DETAIL TO CONFIRM</small><h3>Pop</h3><p>Professional affiliation shown on LinkedIn. Add exact job title, responsibilities and dates after confirmation.</p></div>
+   <div class="item"><small>JUN–JUL 2024</small><h3>New Joinee Experience Survey</h3><p>Project details should be reviewed and confirmed before public launch.</p></div>
+  </article>
+  <article class="card">
+   <div class="eyebrow">Education</div><h2>Academic background</h2>
+   <div class="item"><small>2023–2025</small><h3>CGC Jhanjeri</h3><p>Confirm qualification and specialization before publishing.</p></div>
+   <div class="item"><small>PREVIOUS EDUCATION</small><h3>Add qualification</h3><p>Insert verified institution, course and dates.</p></div>
+  </article>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="container">
+  <div class="contact">
+   <div><div class="eyebrow">Let's connect</div><h2>Good ideas start with a conversation.</h2><p class="muted" style="margin-top:10px">Connect for professional conversations, collaboration and sharing ideas.</p></div>
+   <a class="btn primary" href="https://www.linkedin.com/in/aashima-soni-87554a207/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="container footer-inner"><div><strong style="color:white">Aashima Soni</strong><br>Personal portfolio</div><div>© <span id="year"></span> Aashima Soni</div><a href="#home">Back to top ↑</a></div></footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear()</script>
+</body>
+</html>
